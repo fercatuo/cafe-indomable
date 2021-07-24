@@ -1,0 +1,34 @@
+body{
+  font-style: oblique;
+  font-display: swap;
+}
+
+P {
+  color: #524c56;
+
+}
+
+a {
+  color: #524c56;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+
+#wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+ul{
+  background: #ecf0f1;
+}
+
+
+#skills {
+    background: #ecf0f1;
+}
+
+#contact{
+    background: #ecf0f1;
+}

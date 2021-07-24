@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DESARROLLO_WEB_PROYECTO1</title>
+    <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <link rel = "stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  </head>
+  <body>
+    <h1 align = "center">CAFETERÍA LA INDOMABLE &nbsp
+    <i class="fa fa-coffee fa-lg"></i>
+    <i class="fas fa-spinner fa-spin"></i></h1>
+
+    <div id="wrapper">
+      <div  class="banner-wrapper">
+        <header>
+          <div class="header-inner">
+
+            <nav>
+              <a href="#" id="menu-icon">
+                <i class="fa fa-bars"></i>
+              </a>
+              <ul>
+                <li>
+                  <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                  <a href="#skills">Sobre Nosotros</a>
+                </li>
+                <li>
+                  <a href="#CAFE">Tipos de Café</a>
+                </li>
+                <li>
+                  <a href="#contact">Localizanos y Contactanos</a>
+                </li>
+
+              </ul>
+          </div>
+        </header>
+        <div align = "center" class="slider.wrap">
+          <ul class = 'slider1'>
+            <li><img src="img/slider/uno.jpg" alt = "primera_foto"></li>
+            <li><img src="img/slider/dos.png" alt = "primera_foto"></li>
+            <li><img src="img/slider/tres.jpg" alt = "primera_foto"></li>
+          </ul>
+      </div>
+    </div>
+
+<section class="one-third" id = "skills">
+
+  <div class="icon-wrap">
+    <i class = "fa fa-child fa-3x"></i>
+  </div>
+  <h3>¡ SOBRE NOSOTROS !</h3>
+  <p>Desde hace más de dos siglos y hasta nuestros días, el café se ha mantenido como una de
+las bebidas de mayor consumo en el mundo
+  </p>
+</section>
+
+
+<section class="one-third" id = "CAFE">
+
+  <div class="icon-wrap">
+    <i class = "fa fa-american-sign-language-interpreting fa-lg"></i>
+  </div>
+  <h3>¿ QUE OFRECEMOS ?</h3>
+  <p>
+    Diferentes tipos de café, como:
+  </p>
+  <p>
+    *Café Americano
+  </p>
+  <p>
+    *Latte Machiato
+  </p>
+  <p>
+    *Espresso
+  </p>
+  <li><img src="img/cafes/americano.jpg" alt = "primera_foto"></li>
+
+
+</section>
+
+
+<section class="one-third" id = "contact">
+
+  <div class="icon-wrap">
+    <i class = "fa fa-map-marked fa-lg"></i>
+  </div>
+  <h3> LOCALIZANOS EN:</h3>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30865.437520231662!2d-91.00494885490207!3d14.758904290902173!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x858944109aa1c7af%3A0x5760b86f4cdcf77a!2zVGVjcMOhbg!5e0!3m2!1ses!2sgt!4v1627005404294!5m2!1ses!2sgt" width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <p>
+    En Tecpán Guatemala, Chimaltenango.
+  </p>
+  <p>
+    TELEFONOS: 771864621 - 832134561
+
+  </p>
+</section>
+
+<form action="send.php" method="post" name="contacto" id ="contacto" >
+
+Nombre completo <input name="nombre" type="text" id="nombre completo"size="30" maxlength="100">
+<br>
+<br>
+Correo electronico <input name="email" type="text" onBlur="MM_validateForm('email','','NisEmail');return document.MM_returnValue" size="25" maxlength="100" >
+<br>
+<br>
+Población <input name="poblacion" type="text" onBlur="MM_validateForm('poblacion','','R');return document.MM_returnValue" size="20" maxlength="60">
+<br>
+<br>
+Sexo
+<br>
+<br>
+<input type="radio" name="GrupoOpciones1" value="1"id="GrupoOpciones1_0" />
+Hombre
+<br>
+<input type="radio" name="GrupoOpciones1" value="2"id="GrupoOpciones1_1"/> Mujer
+<br>
+<br>
+Aficiones
+<br>
+
+<textarea cols="50" rows="5" name="comentarios"></textarea>
+<br>
+<br>
+Que opina de nuestra pagina
+<br>
+<br>
+<input type="radio" name="GrupoOpciones2" value="mucho" >me ha gustado mucho
+<br>
+<input type="radio" name="GrupoOpciones2" value="regular" >no esta mal
+<br>
+<input type="radio" name="GrupoOpciones2" value="mal" >no me ha gustado nada
+<br>
+<br>
+Danos tu opinion
+<br>
+<textarea cols="50" rows="5" name="opinion"></textarea>
+<br>
+<br>
+<input type="submit" value="Enviar formulario">
+<input type="Reset" value="Borrar datos">
+
+</form>
+</table>
+
+
+
+
+
+<footer>
+  <address>
+    Autor: GrupoDesarrolloWeb<br>
+    correo: cafesito@gmail.com
+  </address>
+
+  <p>Última modificación: 23 de julio de 2021</p>
+
+
+</footer>
+
+<!-- script-->
+<script>
+  $(document).ready(function(){
+    $('.slider1').bxSlider({
+      mode: 'fade'
+    })
+    $('.slider2').bxSlider({
+      mode: 'fade'
+    })
+    $('.slider3').bxSlider({
+      mode: 'fade'
+    })
+  })
+</script>
+
+<!-- Código de instalación Cliengo para jxarg@miumg.edu.gt --> <script type="text/javascript">(function () { var ldk = document.createElement('script'); ldk.type = 'text/javascript'; ldk.async = true; ldk.src = 'https://s.cliengo.com/weboptimizer/60fa4335e11804002a71c1b9/60fa4337e11804002a71c1bd.js?platform=registration'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ldk, s); })();</script>
+  </body>
+</html>
